@@ -130,7 +130,7 @@ fun AddEditTaskScreen(
                         value = title,
                         onValueChange = { title = it },
                         modifier = Modifier.fillMaxWidth(),
-                        placeholder = { Text("e.g. Submit UAS proposal") },
+                        placeholder = { Text("Add Title") },
                         isError = title.isBlank() && title.isNotEmpty(),
                         supportingText = {
                             if (title.isBlank() && title.isNotEmpty()) {
@@ -143,7 +143,9 @@ fun AddEditTaskScreen(
                             focusedBorderColor = Primary,
                             unfocusedBorderColor = DividerBorder,
                             focusedContainerColor = Surface,
-                            unfocusedContainerColor = Surface
+                            unfocusedContainerColor = Surface,
+                            focusedTextColor = TextPrimary,
+                            unfocusedTextColor = TextPrimary
                         )
                     )
                 }
@@ -169,7 +171,9 @@ fun AddEditTaskScreen(
                             focusedBorderColor = Primary,
                             unfocusedBorderColor = DividerBorder,
                             focusedContainerColor = Surface,
-                            unfocusedContainerColor = Surface
+                            unfocusedContainerColor = Surface,
+                            focusedTextColor = TextPrimary,
+                            unfocusedTextColor = TextPrimary
                         )
                     )
                 }
