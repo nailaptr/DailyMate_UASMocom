@@ -46,6 +46,8 @@ class TaskRepository(
     
     suspend fun upsertCategory(category: CategoryEntity) = categoryDao.upsert(category)
     
+    suspend fun deleteCategory(category: CategoryEntity) = categoryDao.delete(category)
+    
     // Subtasks
     fun observeSubtasks(taskId: String): Flow<List<SubtaskEntity>> = 
         subtaskDao.observeSubtasksByTaskId(taskId)
